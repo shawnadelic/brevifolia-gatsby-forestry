@@ -4,8 +4,9 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: heading
-  label: Content
+- type: document
+  path: content/data/info.json
+  label: Info Page
 - type: directory
   path: content/posts
   label: Blog Posts
@@ -17,9 +18,8 @@ sections:
 - type: document
   path: content/data/authors.yaml
   label: Author List
-- type: document
-  path: content/data/info.json
-  label: Info Page
+- type: heading
+  label: Content
 - type: heading
   label: General Config
 - type: document
